@@ -1,4 +1,4 @@
-<a href="https://layannehonorato.github.io/Music-library-page/">DEMO EM CONSTRUÇÃO</a>
+
 <br />
 <h1>Desafio:</h1>
 <p align="center">
@@ -15,3 +15,8 @@
     <a href="https://www.devchallenge.com.br/">DevChallenge</a>
   </p>
 </p>
+
+<h2 align="center"> 
+	🚧 Construção em pausa...  🚧
+</h2>
+<a href="https://layannehonorato.github.io/Music-library-page/">DEMO EM CONSTRUÇÃO</a>
