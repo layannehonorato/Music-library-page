@@ -1,172 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/*GERAL ================================================================*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("./navIcon.css");
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+@media (max-width: 768px) {
+  html {
+    overflow-y: scroll;
   }
-body{
-    display: flex;
-    font-family: 'Montserrat', sans-serif;
-    color: #e0e0e0;
-    margin: 0;
-}
-main{
-    background-color:rgb(32, 15, 86) ;
-    padding: 2rem 2rem 0 6rem;
-    overflow-x: hidden;
-}
-header{
-    background-color:#040517 ;
-    width: 20%;
-}
-/*PLAYLISTS ============================================================*/
-#playlists{
-    display: flex;
-    overflow-x: auto;
-    height: 26rem;
-    padding: 2rem;
-    column-gap: 2rem;
-}
-#playlists img{
-    width: 30rem;
-    height: 18rem;
-    transition: ease 0.3s;
 }
 
-.imagem-hover{
-    width: 30rem;
-    height: 18rem;
-    border-radius: 20px;
-    margin-bottom: 1rem;
-    overflow-x:hidden;
-    overflow-y:hidden;
-}
-::-webkit-scrollbar{
-    margin: 0;
-    height: 10px;
-    width: 10px;
-    background-color: rgba(85, 41, 230, 0.295);
-}
-  
-::-webkit-scrollbar-thumb:horizontal{
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: rgb(72, 35, 196); 
-    -webkit-box-shadow: inset 0 0 6px rgb(85, 41, 230); 
-    
-}
-::-webkit-scrollbar-thumb:vertical{
-    -webkit-border-radius: 20px;
-    border-radius: 20px;
-    background: rgb(72, 35, 196); 
-    -webkit-box-shadow: inset 0 0 6px rgb(85, 41, 230);
-
-}
-.album{
-    cursor: pointer;
-    opacity: 60%;
-}
-.album:hover{
-    opacity: 100%;
+main {
+  padding: 2rem 0.5rem 1rem 3rem;
+  background-color: #200f56;
 }
 
-#playlists .album:hover img{
-    width: 34rem;
-    height: 22rem;
-    margin-top: -2rem;
-    margin-left: -4rem;
+@media only screen and (max-width: 2048px) and (max-height: 1536px) {
+  main img {
+    width: 30%;
+  }
 }
 
-.album h3{
-    font-weight: 600;
-    font-size: 1.5em;
-    margin: 0;
-}
-.album p{
-    opacity: 50%;
-}
-/*nav area=============================================================*/
-header{
-    padding: 5rem 2rem 0rem 3rem;
-}
-.menu-area{
-    margin: 5rem 1rem;
-
-}
-.menu-area hr{
-    width: 20rem;
-    margin-left: -0.5rem;
-    opacity: 40%;
-}
-.menu-item{
-    display: flex;
-    align-items: center;
-    justify-content: baseline;
-    margin-bottom: 3rem;
-    opacity: 40%;
-    cursor: pointer;
-    transition: ease 200ms;
-}
-.menu-item p{
-    margin: 0 1rem;
-}
-.menu-item:hover{
-    opacity: 100%;
-}
-/*Profile==============================================================*/
-#profile{
-    display: flex;
-    column-gap: 1rem;
-
-}
-#profile img{
-    width: 9rem;
-    height: 10.5rem;
-    margin: -1rem -1.2rem 0rem -0.5rem;
-}
-#profile-flex h2{
-    font-size: 1.5em;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-#img-area{
-    width: 8rem;
-    height: 9rem;
-    overflow: hidden;
-    border-radius: 5px;
-}
-#profile-flex p{
-    font-size:1em;
-    opacity: 50%;
-    cursor: pointer;
-    transition: ease 0.8s;
-}
-#profile-flex p:hover{
-    opacity:100%
-}
-/*search area=========================================================*/
-#search-area{
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    transition-duration: 0.2s;
-    opacity: 60%;
+@media (max-width: 430px) {
+  main {
+    padding: 0;
+  }
+  main img {
+    width: 70%;
+  }
 }
 
-#search-area img{
-    padding: 1rem;
-    margin-top: -2rem;
-    width: 3rem;
+nav {
+  background-color: #040517;
 }
 
-#search-area input{
-    width: 100%;
-    background-color: transparent;
-    border: none;
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
 }
-::-webkit-input-placeholder{
-    color: #e0e0e0;
-    opacity: 60%;
+
+@media (max-width: 768px) {
+  body {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
 }
-#search-area:hover{
-    opacity: 80%;
+
+#playlists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
 }
+
+#playlists h3 {
+  color: #f7f7f7e7;
+}
+
+#playlists p {
+  color: #f5f5f555;
+}
+
+.album {
+  margin-left: 2rem;
+}
+
+.album:last-child {
+  margin-right: 2rem;
+}
+
+.sub-title {
+  margin-left: 2rem;
+  color: #f7f7f7e7;
+}
+
+.imagem-hover {
+  width: 16rem;
+  height: 10rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.imagem-hover img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+
+.album:hover img {
+  width: 110%;
+  height: 110%;
+  margin-left: -1.5rem;
+  margin-top: -1rem;
+}
+
+#nav-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  -webkit-column-gap: 4rem;
+          column-gap: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nav-mobile #search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#nav-mobile input {
+  padding: .5rem;
+  border-radius: 20px;
+  border-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ebc1ff;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #040517;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */

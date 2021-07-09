@@ -6,28 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/styles/normalize.css">
-    <link rel="stylesheet" href="./assets/styles/reset.css">
-    <link rel="stylesheet" href="./assets/styles/skeleton.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
-<!--AVISOS---------------------------------------------------------------
-ESTUDAR GRID
-ARRUMAR RESPONSIVO
-
-
-
-
-FIM DE AVISOS------------------------------------------------------------>
-
-
 
 <body>
 <!--nav area -------------------------------------------------------->
-    <header>
-
+    <nav>
         <div id="profile"><!--profile-->
-            <div id="img-area">
-                <img src="./assets/images/profile.jpg" alt="">
+            <div>
+                <img src="./assets/images/profile.jpg" alt="" width="28%">
             </div>
             <div id="profile-flex">
                 <h2>Dany<br>Schudler</h2>
@@ -41,10 +28,6 @@ FIM DE AVISOS------------------------------------------------------------>
                 <p>Overview</p>
             </div>
             <div class="menu-item">
-                <img src="./assets/images/icons/campaign.svg" alt="">
-                <p>News</p>
-            </div>
-            <div class="menu-item">
                 <img src="./assets/images/icons/music_video.svg" alt="">
                 <p>Playlists</p>
             </div>
@@ -52,79 +35,79 @@ FIM DE AVISOS------------------------------------------------------------>
                 <img src="./assets/images/icons/tune.svg" alt="">
                 <p>Discover</p>
             </div>
-        </div>
-        <div class="menu-area"><!--menu-area-2----------------------------------------->
-            <hr>
             <div class="menu-item">
                 <img src="./assets/images/icons/surround_sound.svg" alt="">
                 <p>Dashboard</p>
-            </div>
-            <div class="menu-item">
-                <img src="./assets/images/icons/chat.svg" alt="">
-                <p>Messages</p>
-            </div>
-            <div class="menu-item">
-                <img src="./assets/images/icons/notification_important.svg" alt="">
-                <p>Notifications</p>
             </div>
             <div class="menu-item">
                 <img src="./assets/images/icons/perm_identity.svg" alt="">
                 <p>Account</p>
             </div>
         </div>
-
-    </header>
+    </nav>
 
 <!-- content area------------------------------------------------------------------>
     <main>
-
-        <div id="search-area"><!--search-->
-            <img src="./assets/images/icons/search.svg" alt="">
-            <input type="search" name="" id="" placeholder="Search artists, playlists or tracks">
-        </div>
-        <div>
-            <div id="playlists"><!--Playlists-->
-                <div class="album">
-                    <div class="imagem-hover">
-                    <img src="./assets/images/playlist1.jpg" alt="">
-                    </div>
-                    <h3>Only STARDUST</h3>
-                    <p>24 tracks</p>
+        <div class="div2">
+            <div id="nav-mobile"><!--search-->
+                <div id="search">
+                    <img src="./assets/images/icons/search.svg" alt="" style="width: 10% !important;">
+                    <input type="text" name="" id="" placeholder="Search artists, playlists or tracks">
                 </div>
-                <div class="album">
-                    <div class="imagem-hover">
-                        <img src="./assets/images/playlist2.jpg" alt="">
+                <!--MENU ICON-->
+                <div id="menuIcon">
+                    <div class="menu">
+                        <span class="line line01"></span>
+                        <span class="line line02"></span>
+                        <span class="line line03"></span>
                     </div>
-                    <h3>Mike Vella</h3>
-                    <p>12 tracks</p>
                 </div>
-                <div class="album">
-                    <div class="imagem-hover">
-                        <img src="./assets/images/playlist3.jpg" alt="">
+            </div>
+            <div>
+                <h3 class="sub-title">Playlists</h3>
+                <div id="playlists"><!--Playlists-->
+                    <div class="album">
+                        <div class="imagem-hover">
+                        <img src="./assets/images/playlist1.jpg" alt="">
+                        </div>
+                        <h3>Only STARDUST</h3>
+                        <p>24 tracks</p>
                     </div>
-                    <h3>the best singles s2</h3>
-                    <p>163 tracks</p>
-                </div>
-                <div class="album">
-                    <div class="imagem-hover">
-                        <img src="./assets/images/playlist4.jpg" alt="">
+                    <div class="album">
+                        <div class="imagem-hover">
+                            <img src="./assets/images/playlist2.jpg" alt="">
+                        </div>
+                        <h3>Mike Vella</h3>
+                        <p>12 tracks</p>
                     </div>
-                    <h3>sad song</h3>
-                    <p>138 tracks</p>
-                </div>
-                <div class="album">
-                    <div class="imagem-hover">
-                        <img src="./assets/images/playlist5.jpg" alt="">
-                  </div>
-                    <h3>Indie</h3>
-                    <p>150 tracks</p>
+                    <div class="album">
+                        <div class="imagem-hover">
+                            <img src="./assets/images/playlist3.jpg" alt="">
+                        </div>
+                        <h3>the best singles s2</h3>
+                        <p>163 tracks</p>
+                    </div>
+                    <div class="album">
+                        <div class="imagem-hover">
+                            <img src="./assets/images/playlist4.jpg" alt="">
+                        </div>
+                        <h3>sad song</h3>
+                        <p>138 tracks</p>
+                    </div>
+                    <div class="album">
+                        <div class="imagem-hover">
+                            <img src="./assets/images/playlist5.jpg" alt="">
+                    </div>
+                        <h3>Indie</h3>
+                        <p>150 tracks</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
     </main>
-
     <script src="./assets/scripts/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+#menuIcon{
+	cursor:pointer;
+}
+.menu{
+	display:flex;
+	flex-direction:column;
+	row-gap:0.4rem;
+}
+.menu{
+		&:hover{
+			.line02{
+				width:1rem
+			}
+	}
+}
+.close{
+	.line01{
+		transform: rotate(-40deg);
+		top:5px;
+	}
+	.line02{
+		display:none;
+	}
+	.line03{
+		transform: rotate(40deg);
+		bottom:5px
+	}
+}
+.line{
+	width:2rem;
+	height:.25rem;
+	background-color:#f7f7f7e7;
+	border-radius:20px;
+	position:relative;
+	transition:.4s;	
+}

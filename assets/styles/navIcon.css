@@ -1,0 +1,45 @@
+#menuIcon {
+  cursor: pointer;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 0.4rem;
+}
+
+.menu:hover .line02 {
+  width: 1rem;
+}
+
+.close .line01 {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  top: 5px;
+}
+
+.close .line02 {
+  display: none;
+}
+
+.close .line03 {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  bottom: 5px;
+}
+
+.line {
+  width: 2rem;
+  height: .25rem;
+  background-color: #f7f7f7e7;
+  border-radius: 20px;
+  position: relative;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+/*# sourceMappingURL=navIcon.css.map */
